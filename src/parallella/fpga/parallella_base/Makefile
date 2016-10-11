@@ -1,3 +1,4 @@
+PATH := $(PATH):/opt/Xilinx/Vivado/2016.2/bin
 
 M_DEPS := run.tcl
 
