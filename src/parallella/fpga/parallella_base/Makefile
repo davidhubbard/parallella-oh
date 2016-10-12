@@ -2,8 +2,6 @@ ifeq ($(shell which bootgen 2>&1),)
 $(error PATH does not contain Xilinx tools. Please type: . /opt/Xilinx/Vivado/<version>/settings64.sh)
 endif
 
-PATH := $(PATH):/opt/Xilinx/Vivado/2016.2/bin
-
 M_DEPS := run.tcl
 
 M_VIVADO := vivado -mode batch -source
