@@ -1,4 +1,4 @@
-ifeq ($(shell echo $$PATH | grep DocNav),)
+ifeq ($(shell which bootgen 2>&1),)
 $(error PATH does not contain Xilinx tools. Please type: . /opt/Xilinx/Vivado/<version>/settings64.sh)
 endif
 
