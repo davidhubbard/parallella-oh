@@ -1,3 +1,6 @@
+ifeq ($(shell echo $$PATH | grep DocNav),)
+$(error PATH does not contain Xilinx tools. Please type: . /opt/Xilinx/Vivado/<version>/settings64.sh)
+endif
 
 M_DEPS := run.tcl
 M_DEPS += ../parallella_base/parallella_base.xpr
