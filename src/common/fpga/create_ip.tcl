@@ -81,18 +81,12 @@ set_property taxonomy            {{/AXI_Infrastructure}} [ipx::current_core]
 set_property vendor_display_name {ADAPTEVA}              [ipx::current_core]
 set_property company_url         {www.parallella.org}    [ipx::current_core]
 set_property supported_families  { \
-					 {virtex7}    {Production} \
-					 {qvirtex7}   {Production} \
 					 {kintex7}    {Production} \
 					 {kintex7l}   {Production} \
-					 {qkintex7}   {Production} \
-					 {qkintex7l}  {Production} \
 					 {artix7}     {Production} \
 					 {artix7l}    {Production} \
 					 {aartix7}    {Production} \
-					 {qartix7}    {Production} \
 					 {zynq}       {Production} \
-					 {qzynq}      {Production} \
 					 {azynq}      {Production} \
 				     }   [ipx::current_core]
 
