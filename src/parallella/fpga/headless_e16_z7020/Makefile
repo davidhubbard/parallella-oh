@@ -29,5 +29,8 @@ all: $(M_DEPS)
 	bootgen -image bit2bin.bif -split bin
 	cp -f system_wrapper.bit.bin parallella_e16_headless_gpiose_7020.bit.bin
 
+../parallella_base/parallella_base.xpr:
+	$(MAKE) -C ../parallella_base
+
 clean:
 	rm -rf $(M_FLIST)
