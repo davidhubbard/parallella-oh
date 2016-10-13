@@ -32,5 +32,8 @@ all: $(M_DEPS)
 ../parallella_base/parallella_base.xpr:
 	$(MAKE) -C ../parallella_base
 
+fsbl_src/executable.elf:
+	hsi -source hsi-compile-fsbl.tcl
+
 clean:
 	rm -rf $(M_FLIST)

@@ -29,6 +29,9 @@ all: $(M_DEPS)
 	bootgen -image bit2bin.bif -split bin
 	cp -f system_wrapper.bit.bin parallella_e16_headless_gpiose_7010.bit.bin
 
+fsbl_src/executable.elf:
+	hsi -source hsi-compile-fsbl.tcl
+
 ../parallella_base/parallella_base.xpr:
 	$(MAKE) -C ../parallella_base
 
